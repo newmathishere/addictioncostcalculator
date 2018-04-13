@@ -1,0 +1,268 @@
+g
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Start your base/mobile styles here */
+
+html, body {
+    font-size: 16px;
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+}
+
+header {
+    background-color: white;
+}
+
+figcaption {
+
+          text-align: center;
+
+}
+
+.main-text {
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+.bigimage {max-width: 100%
+
+
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+
+
+.calculator {
+    margin: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+    background-color: orange;
+    text-align: center;
+}
+
+i {
+    font-size: 14px;
+}
+
+
+
+.caption {
+    color: gray;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.credit {
+    font-weight: 400;
+}
+
+
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    text-align: center;
+    font: Helvetica;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 5px;
+    font: Helvetica;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2em;
+    opacity: .8;
+    padding-bottom: 20px;
+}
+
+h4, li {
+    font-size: 1.2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    opacity: .8;
+    text-align: left;
+}
+
+blockquote {
+    margin: 0;
+    /* gets rid of the default blockquote margin */
+}
+
+.pquote {
+    font-size: 200%;
+    float: right;
+    background: #ddf;
+    font-weight: bold;
+    padding: 13px;
+    margin: 0 15px 15px 0;
+}
+
+ol {
+    padding-left: 50px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+
+
+.footer {
+    padding-bottom: 60px;
+    font-size: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: .8;
+}
+
+
+
+.input-style {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.big-btn {
+    background-color: red;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Helvetica';
+    /*font-size: .85em !important;*/
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+#submit {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    width: 150px;
+    font-weight: bold;
+}
+
+
+#sum {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 10px;
+    length:10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    h4 {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 40px;
+
+    }
+    .main-text{
+          margin: 10px;
+
+    }
+    #photo1 {}
+}
+
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    .circle:hover {
+        background-color: purple;
+    }
+    #popIn {
+        font-size: 5em;
+        padding: 200px 15px 30px 15px;
+        margin: 10px;
+    }
+
+    .main-text{
+      margin:120px;
+      padding: 5px;
+
+    }
+    .btn_close {
+
+    }
+
+    .btn_close:hover {
+        color: blue;
+    }
+}
+
+
+}
+
+}
